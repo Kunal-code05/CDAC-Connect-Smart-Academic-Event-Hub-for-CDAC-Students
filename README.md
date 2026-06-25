@@ -1,76 +1,214 @@
-# CDAC Connect – Smart Academic & Event Hub for CDAC Students
+# Student Connect – Smart Academic & Event Management Platform
 
-## Overview
+## 📌 Overview
 
-CDAC Connect is a full-stack web application developed to streamline communication and academic activities between students and faculty. The platform centralizes announcements, events, study resources, and assignment management into a single dashboard, eliminating the need to track updates across multiple channels.
+Student Connect is a MERN Stack-based web application designed to centralize academic communication, event management, and learning resources for students and faculty.
 
-## Features
+The platform eliminates the need to track updates across multiple channels by providing a single dashboard for announcements, events, assignments, and study materials.
 
-* Secure User Authentication and Authorization using JWT
-* Role-Based Access Control (Student and Faculty/Admin)
-* Announcement and Notice Management
-* Event Creation, Registration, and Tracking
-* Study Material and Resource Sharing
-* Assignment Tracking and Deadline Management
-* Dashboard Analytics and Activity Monitoring
-* Complete CRUD Operations for Major Modules
-* Responsive and User-Friendly Interface
+---
 
-## Technology Stack
+## 🚀 Features
+
+### 🔐 Authentication & Authorization
+
+* User Registration and Login
+* JWT-Based Authentication
+* Role-Based Access Control
+
+  * Student
+  * Faculty/Admin
+
+### 📢 Announcement Management
+
+* Faculty can create and publish announcements
+* Students can view all academic updates in one place
+* Centralized communication system
+
+### 📅 Event Management
+
+* Create and manage academic events
+* Workshops, seminars, mock tests, and sessions
+* Students can view upcoming events
+
+### 📚 Study Resources
+
+* Upload and manage learning materials
+* Notes, PDFs, and useful links
+* Easy access to educational resources
+
+### 📝 Assignment Tracking
+
+* Faculty can post assignments
+* Students can view assignment deadlines
+* Assignment status management
+
+### 📊 Dashboard
+
+* Personalized dashboard for users
+* Quick access to announcements, events, and resources
+* Role-specific functionalities
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
 * React.js
+* React Router
+* Axios
 * HTML5
 * CSS3
-* JavaScript
-* Bootstrap
+* JavaScript (ES6+)
 
 ### Backend
 
 * Node.js
 * Express.js
-* RESTful APIs
-* JWT Authentication
 
 ### Database
 
-* MySQL
+* MongoDB
+* Mongoose
 
-## System Modules
+### Authentication
 
-### Student
+* JWT (JSON Web Token)
+* bcrypt.js
 
-* View announcements and notices
-* Register for events and workshops
-* Access study resources and materials
-* Track assignment deadlines and submissions
+---
 
-### Faculty/Admin
+## 📂 Project Structure
 
-* Create and manage announcements
-* Organize and manage events
-* Upload study resources
-* Create and monitor assignments
-* Manage users and platform activities
+```text
+student-connect/
+│
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── context/
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── package.json
+│
+├── server/
+│   ├── config/
+│   ├── models/
+│   ├── controllers/
+│   ├── routes/
+│   ├── middleware/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+```
 
-## Key Highlights
+---
 
-* Centralized academic communication platform
-* Secure authentication and role-based authorization
-* Scalable architecture with RESTful APIs
-* Responsive design for seamless user experience
-* Optimized MySQL database with efficient data management
+## ⚙️ Installation
 
-## Future Enhancements
+### Clone Repository
 
-* File Upload System
+```bash
+git clone https://github.com/your-username/student-connect.git
+cd student-connect
+```
+
+### Install Frontend Dependencies
+
+```bash
+cd client
+npm install
+```
+
+### Install Backend Dependencies
+
+```bash
+cd ../server
+npm install
+```
+
+---
+
+## 🔧 Environment Variables
+
+Create a `.env` file inside the `server` folder.
+
+```env
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret_key
+```
+
+---
+
+## ▶️ Running the Application
+
+### Start Backend
+
+```bash
+cd server
+npm start
+```
+
+### Start Frontend
+
+```bash
+cd client
+npm start
+```
+
+Frontend:
+
+```text
+http://localhost:3000
+```
+
+Backend:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## 📸 Key Modules
+
+* Authentication System
+* Announcement Management
+* Event Management
+* Study Resource Sharing
+* Assignment Tracking
+* Role-Based Access Control
+* Dashboard Analytics
+
+---
+
+## 🎯 Future Enhancements
+
+* Event Registration System
+* File Upload Support
 * Email Notifications
-* Advanced Search and Filtering
+* Search and Filter Functionality
+* Dashboard Analytics
 * Real-Time Notifications
 * Attendance Tracking
-* Analytics Dashboard
 
-## Project Objective
+---
 
-The objective of CDAC Connect is to provide a centralized academic collaboration platform that enhances communication, improves resource accessibility, and simplifies event and assignment management for students and faculty.
+## 👨‍💻 Author
+
+Kunal Gundawar
+
+---
+
+## 📄 License
+
+This project is developed for educational and learning purposes.
